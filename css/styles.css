@@ -30,6 +30,11 @@ img {
   display: block;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
 /* Header */
 .header-section .container {
   display: flex;
