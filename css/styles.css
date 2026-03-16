@@ -242,7 +242,6 @@ header {
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  flex-basis: calc((100% - 72px) / 4);
   height: 112px;
 }
 
@@ -354,7 +353,7 @@ header {
   align-content: center;
   text-align: center;
   gap: 8px;
-  padding: 32px 0;
+  padding: 32px 16;
 }
 
 .employee-svg-list {
