@@ -615,6 +615,7 @@ header .container {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  pointer-events: none;
 }
 
 .modal-overlay.is-open {
@@ -631,7 +632,6 @@ header .container {
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  pointer-events: none;
 }
 
 .modal-form {
@@ -650,7 +650,7 @@ header .container {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
-  color: var(--light-slate);
+  color: #8e8f99;
 }
 
 .modal-form legend {
