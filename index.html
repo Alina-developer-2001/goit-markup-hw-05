@@ -504,7 +504,95 @@
             </li>
           </ul>
         </div>
+        <div class="container3">
+          <form class="email-footer-form">
+            <label class="email-label"
+              >Subscribe
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                novalidate
+              />
+            </label>
+            <button class="form-button" type="submit">
+              Subscribe
+              <svg width="24" height="20" class="button-svg">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal overlay -->
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <form class="modal-form">
+          <span class="dagger-span">
+            <svg width="8" height="8" class="dagger-svg">
+              <use href="./images/icons.svg#icon-dagger"></use>
+            </svg>
+          </span>
+          <fieldset>
+            <legend>Leave your contacts and we will call you back</legend>
+            <div class="label-container">
+              <label class="input-label"
+                >Name
+                <div class="input-container">
+                  <svg width="12" height="12">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    name="name"
+                    novalidate
+                    required
+                    autofocus
+                  />
+                </div>
+              </label>
+              <label class="input-label"
+                >Phone
+                <div class="input-container">
+                  <svg width="13" height="13">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <input type="phone" name="phone" novalidate required />
+                </div>
+              </label>
+              <label class="input-label"
+                >Email
+                <div class="input-container">
+                  <svg width="15" height="12">
+                    <use href="./images/icons.svg#icon-message"></use>
+                  </svg>
+                  <input type="email" name="email" required />
+                </div>
+              </label>
+              <label
+                >Comment
+                <textarea name="comment" placeholder="Text input"></textarea>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="accept" value="accept" />
+                <span class="checkmark">
+                  <svg width="8" height="10">
+                    <use href="./images/icons.svg#icon-checkmark"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="modal-send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
