@@ -476,7 +476,7 @@ header .container {
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
-  margin-right: auto;
+  margin-right: 120px;
 }
 .footer .container2 {
   display: flex;
@@ -484,7 +484,7 @@ header .container {
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer {
@@ -536,6 +536,15 @@ header .container {
   color: #fff;
 }
 
+.form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-bottom: 16px;
+}
+
 .form-button {
   display: flex;
   background-color: #4d5ae5;
@@ -552,6 +561,7 @@ header .container {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
+  border-radius: 4px;
 }
 
 .form-button:hover,
@@ -590,11 +600,7 @@ header .container {
 .email-label {
   display: flex;
   flex-direction: column;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: white;
+
   gap: 16px;
 }
 
@@ -617,9 +623,9 @@ header .container {
   background-color: rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
+
+  /* opacity: 0;
+  pointer-events: none; */
 }
 
 .modal-overlay.is-open {
@@ -681,20 +687,30 @@ header .container {
   margin-bottom: 24px;
 }
 
+.dagger-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dagger-svg:hover,
+.dagger-svg:focus {
+  fill: #ffffff;
+}
+
 .dagger-button:hover,
 .dagger-button:focus {
   background-color: #404bbf;
-  fill: #ffffff;
 }
 
 .input-container input {
   border: none;
 }
 .input-container {
+  display: block;
   position: relative;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   height: 40px;
+  width: 360px;
   cursor: pointer;
   transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -716,7 +732,7 @@ header .container {
 }
 
 .form-svg {
-  fill: black;
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -794,7 +810,7 @@ textarea::placeholder {
 .checkmark {
   display: flex;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.7);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   justify-content: center;
