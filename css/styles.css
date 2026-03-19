@@ -589,6 +589,11 @@ header .container {
   background-color: #2e2f42;
   padding: 8px 0;
   padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: white;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -623,9 +628,9 @@ header .container {
   background-color: rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
-
-  /* opacity: 0;
-  pointer-events: none; */
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-overlay.is-open {
@@ -688,11 +693,12 @@ header .container {
 }
 
 .dagger-svg {
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dagger-svg:hover,
-.dagger-svg:focus {
+.dagger-button:hover .dagger-svg,
+.dagger-button:focus .dagger-svg {
   fill: #ffffff;
 }
 
