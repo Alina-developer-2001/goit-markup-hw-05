@@ -654,13 +654,13 @@ header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .modal-form .input-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 361px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -810,7 +810,6 @@ textarea::placeholder {
   height: 16px;
   left: 12px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkmark {
@@ -824,6 +823,7 @@ textarea::placeholder {
   opacity: 1;
   margin-right: 8px;
   pointer-events: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkmark svg {
@@ -838,6 +838,13 @@ textarea::placeholder {
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark svg {
   opacity: 1;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
 }
 
 .modal-send-button {
@@ -856,6 +863,7 @@ textarea::placeholder {
   cursor: pointer;
   margin-top: 24px;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .checkbox-link {
